@@ -1,0 +1,111 @@
+.main
+	padding-top: 60px
+	padding-bottom: 160px
+	background: url('../img/main/main-bg.png') center no-repeat
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	position: relative
+	z-index: 1
+	color: #FFF 
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100% 
+		height: 100%
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.736) 0%, rgba(66, 0, 0, 0.68) 71.88%, rgba(140, 0, 0, 0.264) 100%)  
+		z-index: -1
+	&__content
+		position: relative
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-justify-content: center
+		justify-content: center
+		z-index: 22
+	&__title
+		margin: 0	
+		margin-bottom: 20px
+		font-family: $neo-medium
+		font-size: 48px
+		line-height: 140%
+		letter-spacing: 1.25px
+		color: #FFFFFF
+	&__subtitle
+		margin-bottom: 40px
+		font-family: $neo-regular
+		font-size: 36px
+		line-height: 130%
+		letter-spacing: 1.25px
+		color: #FFFFFF
+	&__button
+		&-block
+			position: relative
+			margin-bottom: 40px
+		cursor: pointer
+		font-family: $arial-bold
+		font-size: 18px
+		line-height: 21px
+		text-align: center
+		letter-spacing: 0.5px
+		color: #FFFFFF
+		border: none
+		background-color: $active-color-red
+		box-shadow: 0px 4px 30px rgba(226, 57, 65, 0.4)
+		border-radius: 30px
+		padding: 22px 65px
+		&:focus
+			outline: none 
+		&-text
+			position: absolute
+			left: 310px
+			bottom: -50%
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			&-sub
+				font-family: $neo-regular
+				font-size: 16px
+				line-height: 130%
+				text-align: center
+				letter-spacing: 0.5px
+		&-image
+			position: absolute
+			top: -52px
+			left: 0
+			
+	&__list
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		&-item
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			margin-bottom: 20px
+			&-icon
+				margin-right: 20px
+				background: #FFFFFF
+				box-shadow: 0px 4px 30px rgba(236, 239, 241, 0.4)
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				padding: 7px
+			&-text
+				font-family: $neo-regular
+				font-size: 16px
+				line-height: 130%
+				letter-spacing: 0.5px
+			&-1
+				width: 300px
+	&__image
+		position: absolute
+		bottom: -120px
+		right: 0
+		&-media
+			display: none
+		

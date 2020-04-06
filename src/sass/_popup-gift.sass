@@ -1,0 +1,59 @@
+.popup__gift
+	display: none
+	z-index: 99
+	position: relative
+	&::before
+		content: ''
+		top: 0
+		left: 0
+		width: 100% 
+		height: 100% 
+		background-color: rgba(0,0,0, 0.5)
+		z-index: 1
+		position: fixed
+		overflow: hidden 
+		-webkit-transition: all .5s 
+		-moz-transition: all .5s 
+		-ms-transition: all .5s 
+		-o-transition: all .5s 
+		transition: all .5s 
+	&-form
+		background: #FFFFFF
+		border: 1px solid #ECEFF1
+		border-radius: 30px
+		padding: 40px 35px
+		display: flex
+		position: relative
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		input
+			font-family: $neo-regular
+			font-size: 18px
+			line-height: 130%
+			text-align: center
+			letter-spacing: 0.5px
+			color: $text-color-grey
+			background-color: #ECEFF1
+			border-radius: 30px
+			border: none
+			width: 100% 
+			padding: 18px 0
+			margin-bottom: 10px
+			&:focus
+				outline: none
+		&_close
+			position: absolute
+			right: -10px
+			top: -15px
+			font-family: $arial-regular
+			font-size: 30px 
+			color: $active-color-red
+			cursor: pointer 
+.popup__gift>.popup__call-block>.popup__gift-form>.popup__call-form-title
+	span
+		color: $active-color-red 

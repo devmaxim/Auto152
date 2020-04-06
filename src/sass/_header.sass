@@ -1,0 +1,100 @@
+.header
+	padding-top: 20px
+	padding-bottom: 20px
+	&__media
+		&-phone
+			display: none
+	&__content
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		-webkit-align-items: center
+		align-items: center
+	&__sub
+		font-family: $neo-regular
+		font-size: 12px
+		line-height: 140%
+		letter-spacing: 0.5px
+		color: $text-color-grey
+	&__address
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-align-items: center
+		align-items: center
+		font-family: $neo-regular
+		font-size: 12px
+		line-height: 140%
+		letter-spacing: 0.5px
+		color: $text-color-grey
+		&-image
+			margin-right: 9px
+	&__call-to-action
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-justify-content: center
+		justify-content: center
+	&__cta
+		&-text
+			font-family: $neo-regular
+			font-size: 12px
+			line-height: 13px
+			letter-spacing: 0.5px
+			color: $text-color-grey
+			margin-bottom: 5px
+		&-social
+			display: flex
+			-webkit-flex-direction: row
+			-ms-flex-direction: row
+			flex-direction: row
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: center
+			align-items: center
+			&-icon
+				margin-right: 10px
+				width: 22px
+				height: 22px
+				&-3
+					margin-right: 0
+	&__call
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-align-items: center
+		align-items: center
+		&-number
+			font-family: $neo-medium
+			font-size: 18px
+			line-height: 19px
+			letter-spacing: 0.5px
+			color: $active-color-red
+			text-decoration: none
+			margin-bottom: 5px
+			&:focus
+				outline: none 
+		&-text
+			font-family: $neo-regular
+			font-size: 12px
+			line-height: 13px
+			letter-spacing: 0.5px
+			color: #888888
+	&__button
+		font-family: $arial-bold
+		font-size: 16px
+		line-height: 18px
+		color: #ffffff
+		border: none
+		padding: 13px 25px
+		background: $active-color-red
+		box-shadow: 0px 4px 30px rgba(226, 57, 65, 0.4)
+		border-radius: 30px
+		cursor: pointer
+		&:focus
+			outline: none
